@@ -1,0 +1,22 @@
+.task-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-row input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-row .task-name {
+  flex-grow: 1;
+}
+
+.task-row .task-name.completed {
+  text-decoration: line-through;
+}
+
+.task-row .delete-task {
+  margin-left: 10px;
+}

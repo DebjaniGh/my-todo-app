@@ -1,1 +1,11 @@
-<p>todo-item works!</p>
+<div class="task-row">
+  <input
+    type="checkbox"
+    [checked]="todo.completed"
+    (change)="onToggle.emit(todo.id)"
+  />
+  <span class="task-name" [class.completed]="todo.completed">{{
+    todo.description
+  }}</span>
+  <button class="delete-task" (click)="onDelete.emit(todo.id)">Delete</button>
+</div>

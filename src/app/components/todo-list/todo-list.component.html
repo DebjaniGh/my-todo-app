@@ -1,2 +1,6 @@
-<p>todo-list works!</p>
-<app-todo-item></app-todo-item>
+<app-todo-item
+  *ngFor="let item of todos"
+  [todo]="item"
+  (onDelete)="onDeleteToDo($event)"
+  (onToggle)="onToggleToDo($event)"
+></app-todo-item>
