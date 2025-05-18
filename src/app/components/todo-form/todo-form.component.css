@@ -1,0 +1,26 @@
+/* Form Styling */
+.todo-form {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.todo-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}

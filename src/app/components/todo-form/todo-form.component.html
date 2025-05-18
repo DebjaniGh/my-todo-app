@@ -1,0 +1,13 @@
+<div class="todo-form">
+  <form>
+    <input
+      class="todo-input"
+      [(ngModel)]="newTask"
+      placeholder="Enter new ToDo"
+      name="todoinput"
+    />
+    <button type="submit" class="btn add-btn" (click)="addToDo()">
+      Add ToDo
+    </button>
+  </form>
+</div>

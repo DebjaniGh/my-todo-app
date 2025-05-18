@@ -1,6 +1,10 @@
-<app-todo-item
-  *ngFor="let item of todos"
-  [todo]="item"
-  (onDelete)="onDeleteToDo($event)"
-  (onToggle)="onToggleToDo($event)"
-></app-todo-item>
+<div class="todo-container">
+  <app-todo-form></app-todo-form>
+  <app-todo-item
+    class="'todo-list"
+    *ngFor="let item of todos"
+    [todo]="item"
+    (onDelete)="onDeleteToDo($event)"
+    (onToggle)="onToggleToDo($event)"
+  ></app-todo-item>
+</div>

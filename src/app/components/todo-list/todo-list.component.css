@@ -1,0 +1,14 @@
+.todo-container {
+  max-width: 37.5rem;
+  margin: 3.75rem auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: rgb(245, 248, 236);
+}
+
+/* List Styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}

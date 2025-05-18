@@ -22,14 +22,14 @@ export class TodoService {
   }
 
   addToDo(title: string) {
-    this.getToDos().subscribe((todos: ToDo[]) => {
-      const newToDo: ToDo = {
-        id: todos[todos.length - 1].id + 1,
-        description: title,
-        completed: false,
-      };
-      this.todos.next([...todos, newToDo]);
-    });
+    const currToDos = this.todos.value;
+    const newToDo: ToDo = {
+      id: currToDos[currToDos.length - 1].id + 1,
+      description: title,
+      completed: false,
+    };
+
+    this.todos.next([...currToDos, newToDo]);
   }
 
   // change the status of task from completed to not completed
